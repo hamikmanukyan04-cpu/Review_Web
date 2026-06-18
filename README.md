@@ -49,5 +49,46 @@ This is a simple Machine Learning web application that classifies text as **Posi
 git clone https://github.com/your-username/sentiment-site.git
 cd sentiment-site
 
-## 2. Install dependencies
+```
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
+
+```
+### 3. Train the model
+```bash
+python train.py
+
+👉 This will create model.pkl
+
+```
+### 4. Run the web app
+```bash
+python app.py
+
+```
+### 🌍 Open in browser
+```bash
+http://127.0.0.1:5000/
+
+```
+### 🧪 Example
+
+Input:
+```bash
+I love this product, it is amazing!
+
+```
+Output:
+```bash
+Positive 😊
+
+```
+Input:
+```bash
+This is the worst experience ever.
+
+```
+Output:
+```bash
+Negative 😡

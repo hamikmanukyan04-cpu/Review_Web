@@ -49,5 +49,5 @@ This is a simple Machine Learning web application that classifies text as **Posi
 git clone https://github.com/your-username/sentiment-site.git
 cd sentiment-site
 
-2. Install dependencies
+## 2. Install dependencies
 pip install -r requirements.txt

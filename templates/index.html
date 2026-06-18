@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🤖 Sentiment AI</h1>
+    <p>Write a sentence and detect Positive / Negative</p>
+
+    <form method="POST">
+        <input type="text" name="text" placeholder="Enter text...">
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if result %}
+        {% if result == "positive" %}
+            <div class="result positive">😊 Positive</div>
+        {% else %}
+            <div class="result negative">😡 Negative</div>
+        {% endif %}
+    {% endif %}
+
+</div>
+
+</body>
+</html>
